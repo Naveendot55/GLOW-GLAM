@@ -3,5 +3,5 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_PAGES === 'true' ? '/Salon/' : '/',
+  base: process.env.GITHUB_PAGES === 'true' ? '/GLOW-GLAM/' : '/',
 })
