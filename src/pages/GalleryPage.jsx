@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight, Sparkles, ZoomIn, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSEO } from "../hooks/useSEO";
+import { BUSINESS_CONFIG } from "../config/business";
 import SectionHeading from "../components/SectionHeading";
 
 const GALLERY_CATEGORIES = [
