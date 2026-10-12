@@ -1,86 +1,126 @@
-# Glow & Glam Studio — Professional Website (Demo Template)
+# Glow & Glam Studio — Luxury Unisex Salon Web Application
 
-A modern, high-performance, responsive web application developed for **Glow & Glam Studio** (Demo Unisex Salon). Crafted with a luxury salon aesthetic (warm ivory, muted gold, deep charcoal, and soft beige), data-driven service catalogs, an interactive photo gallery with accessible lightbox, multi-branch location finders with Google Maps, and an appointment enquiry system supporting both instant WhatsApp dispatch and direct web form integration.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2ea44f?style=for-the-badge&logo=github)](https://naveendot55.github.io/GLOW-GLAM/)
+[![React 19](https://img.shields.io/badge/React-19.2.8-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.3.4-646CFF?style=for-the-badge&logo=vite)](https://vite.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-v7-CA4245?style=for-the-badge&logo=reactrouter)](https://reactrouter.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Note:** This project is currently configured with **clearly fictional placeholder demo data**. All business information, telephone numbers, addresses, and prices are demonstration examples.
-
----
-
-## 1. Technology Stack
-
-- **Frontend Framework:** React 19 + Vite
-- **Routing:** React Router v7 (`react-router-dom`)
-- **Styling:** Custom Luxury CSS Design System + Bootstrap 5 utilities
-- **Icons:** Lucide React (`lucide-react`) + Custom inline SVGs
-- **Celebration / Feedback:** `canvas-confetti`
-- **SEO & Structured Data:** Semantic HTML5, Open Graph, Twitter Cards, Schema.org `HairSalon` JSON-LD, `robots.txt`, and `sitemap.xml`.
+> **Live Deployment:** **[https://naveendot55.github.io/GLOW-GLAM/](https://naveendot55.github.io/GLOW-GLAM/)**  
+> A high-performance, fully responsive web application engineered for modern beauty and grooming salons. Built with a bespoke champagne-gold luxury design system, dynamic service routing, an interactive photo gallery with accessible lightbox modal, and a dual-channel appointment enquiry engine.
 
 ---
 
-## 2. Key Pages & Routes
+## 🌟 Live Demo & Quick Navigation
 
-| Route | Page | Description |
-|---|---|---|
-| `/` | **Home** | Hero section, announcement bar, about preview, featured rituals, why choose us pillars, gallery preview, sample client reviews, branch locator, and booking CTA. |
-| `/about` | **About Us** | Brand story, styling vision, certified professional standards, salon interior imagery, and hygiene commitments. |
-| `/services` | **Services Menu** | Full catalog of services with interactive category filter pills (*Haircut & Styling, Hair Spa, Texture & Treatment, Hair Colouring, Skin & Facial, Bridal & Makeup, Grooming & Waxing*), live keyword search, starting prices, and durations. |
-| `/services/:slug` | **Service Details** | Dynamic route detailing individual rituals (e.g. `/services/womens-haircut-styling`), benefits breakdown, what's included, and pre-filled booking actions. |
-| `/gallery` | **Gallery** | Visual portfolio with category filters and a keyboard-accessible modal lightbox (Escape to close, Left/Right arrow keys to navigate, image counter). |
-| `/contact` | **Contact & Locations** | Click-to-call phone numbers, WhatsApp chat, addresses for both sample branches, embedded Google Maps, enquiry form, and FAQ accordion. |
-| `/book-appointment` | **Book Appointment** | Complete appointment enquiry form with date picker (past dates blocked), branch selection, service dropdown, time slots, consent check, and instant confirmation summary. |
-| `/privacy-policy` | **Privacy Policy** | Transparent customer privacy statement regarding enquiry data collection, communication channels, and data deletion requests. |
-| `*` | **Not Found (404)** | Branded 404 page with return shortcuts. |
+The application is deployed on **GitHub Pages**. Explore the live pages directly:
+
+| Page | Live URL | Description |
+| :--- | :--- | :--- |
+| 🏠 **Homepage** | [https://naveendot55.github.io/GLOW-GLAM/](https://naveendot55.github.io/GLOW-GLAM/) | Hero spotlight, service teasers, studio standards, client reviews, branch locator. |
+| 💇 **Services Catalog** | [https://naveendot55.github.io/GLOW-GLAM/services](https://naveendot55.github.io/GLOW-GLAM/services) | Filterable ritual menu with live keyword search, starting rates, and duration badges. |
+| 📅 **Book Appointment** | [https://naveendot55.github.io/GLOW-GLAM/book-appointment](https://naveendot55.github.io/GLOW-GLAM/book-appointment) | Date-picker validation, time slots, branch selection, and instant enquiry dispatch. |
+| 📍 **Contact & Locations** | [https://naveendot55.github.io/GLOW-GLAM/contact](https://naveendot55.github.io/GLOW-GLAM/contact) | Multi-branch locator tabs, interactive Google Maps, click-to-call, FAQ accordion. |
+| 🖼️ **Portfolio Gallery** | [https://naveendot55.github.io/GLOW-GLAM/gallery](https://naveendot55.github.io/GLOW-GLAM/gallery) | Categorized photography showcase with keyboard-navigable modal lightbox. |
+| ✨ **About the Studio** | [https://naveendot55.github.io/GLOW-GLAM/about](https://naveendot55.github.io/GLOW-GLAM/about) | Studio heritage, certified styling standards, hygiene protocols, and vision. |
+| 🔒 **Privacy Policy** | [https://naveendot55.github.io/GLOW-GLAM/privacy-policy](https://naveendot55.github.io/GLOW-GLAM/privacy-policy) | Client data transparency, communication policies, and data handling practices. |
 
 ---
 
-## 3. Quick Start & Installation
+## 🎨 Key Architectural Highlights
 
-### Prerequisites
-- **Node.js**: v18.0.0 or higher
-- **npm**: v9.0.0 or higher
+* **Bespoke Luxury Design Language:**  
+  Curated color harmony featuring Warm Ivory (`#faf7f2`), Deep Charcoal (`#181716`), and Muted Champagne Gold (`#c5a880`) paired with typography from Google Fonts (*Playfair Display* & *Plus Jakarta Sans*).
+* **Responsive Across All Viewports:**  
+  Rigorously tested and fluid across mobile (360px, 390px), tablet (768px), laptop (1024px), and ultra-wide desktops (1440px+). Zero horizontal scroll overflow.
+* **Accessible Lightbox Modal:**  
+  WCAG-compliant keyboard controls (`Escape` to close, `ArrowLeft` / `ArrowRight` to navigate images, accessible focus trapping, and ARIA labels).
+* **Dual-Mode Appointment Engine:**  
+  1. **Instant WhatsApp Dispatch:** Formats pre-filled booking enquiries with unique reference codes (`DEMO-XXXXXX`) directly into WhatsApp chat.
+  2. **Web API Endpoint:** Optional integration with Formspree, Web3Forms, or custom REST APIs with client-side confirmation feedback.
+* **Centralized Business & Data Architecture:**  
+  Every piece of business information (salon name, phone numbers, hours, social links, addresses, services, prices) lives in two central configuration files for effortless white-label customization.
+* **Built-in SEO & Schema Markup:**  
+  Pre-configured Open Graph meta tags, Twitter Cards, dynamic page titles (`useSEO` hook), and Schema.org `HairSalon` JSON-LD structured data.
 
-### Installation
-```bash
-# Clone or enter the project directory
-cd SALON
+---
 
-# Install dependencies
-npm install
+## 💻 Tech Stack
+
+- **Core:** [React 19](https://react.dev/) + [Vite 8](https://vite.dev/)
+- **Routing:** [React Router v7](https://reactrouter.com/) (`react-router-dom`)
+- **Styling:** Custom Luxury CSS Design System + Modular CSS Utilities
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Micro-Interactions:** `canvas-confetti` (interactive booking feedback)
+- **Deployment:** GitHub Pages, Vercel, Netlify
+
+---
+
+## 📁 Project Structure
+
+```text
+GLOW-GLAM/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # Automated CI/CD GitHub Pages workflow
+├── public/
+│   ├── _redirects              # Netlify SPA routing rewrite rule
+│   ├── favicon.svg             # Luxury monogram brand favicon
+│   ├── robots.txt              # Search crawler directives
+│   └── sitemap.xml             # Search engine XML index
+├── src/
+│   ├── assets/                 # Brand graphics and icons
+│   ├── components/             # Reusable UI components
+│   │   ├── AnnouncementBar.jsx # Dynamic promotional ribbon
+│   │   ├── AppointmentForm.jsx # Appointment enquiry form with validation
+│   │   ├── BranchLocator.jsx   # Multi-branch switcher with map embeds
+│   │   ├── Footer.jsx          # Studio footer with branch details
+│   │   ├── Navbar.jsx          # Sticky header with mobile drawer
+│   │   ├── SectionHeading.jsx  # Reusable luxury section header
+│   │   ├── ServiceCard.jsx     # Service catalog card
+│   │   ├── Testimonials.jsx    # Neutral client feedback slider
+│   │   ├── WhatsAppButton.jsx  # Floating pulsing WhatsApp action
+│   │   └── WhyChooseUs.jsx     # Value pillars and trust standards
+│   ├── config/
+│   │   └── business.js         # ⭐ Central salon business configuration
+│   ├── data/
+│   │   └── services.js         # ⭐ Central service menu, rates & descriptions
+│   ├── hooks/
+│   │   └── useSEO.js           # Dynamic document title & meta tags hook
+│   ├── pages/
+│   │   ├── About.jsx
+│   │   ├── BookAppointment.jsx
+│   │   ├── Contact.jsx
+│   │   ├── GalleryPage.jsx
+│   │   ├── Home.jsx
+│   │   ├── NotFound.jsx        # Custom branded 404 page
+│   │   ├── PrivacyPolicy.jsx
+│   │   ├── ServiceDetails.jsx  # Dynamic route (/services/:slug)
+│   │   └── Services.jsx
+│   ├── App.jsx                 # Route definitions & layout wrapper
+│   ├── index.css               # Design tokens, variables & typography
+│   └── main.jsx                # Application root mounting
+├── .env.example                # Safe environment variable template
+├── .gitignore                  # Git tracking exclusion list
+├── package.json                # Project dependencies & build scripts
+├── vercel.json                 # Vercel SPA routing rewrites
+└── vite.config.js              # Vite bundler config with base path
 ```
 
-### Running Locally
-```bash
-# Start Vite development server
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Production Build
-```bash
-# Build optimized static production bundle
-npm run build
-
-# Preview production build locally
-npm run preview
-```
-The compiled assets will be placed in the `dist/` directory.
-
 ---
 
-## 4. Central Configuration Guide
+## ⚙️ Central Configuration Guide
 
-All business details, phone numbers, branch addresses, operating hours, and booking behaviors are centralized in **`src/config/business.js`**. You never need to hunt through individual components to update salon information.
+You can easily adapt this project for any salon business by editing just two files:
 
-### A. Central Business Configuration
-Open `src/config/business.js`:
+### 1. Salon Business Details (`src/config/business.js`)
+Edit name, phone numbers, WhatsApp, branch addresses, operating hours, and social media handles:
 ```javascript
 export const BUSINESS_CONFIG = {
   name: "Glow & Glam Studio",
   tagline: "Your Beauty, Your Confidence",
   primaryPhone: "+91 90000 00001",
-  primaryPhoneRaw: "+919000000001",
   secondaryPhone: "+91 90000 00002",
-  secondaryPhoneRaw: "+919000000002",
   email: "hello@example.com",
   operatingHours: {
     weekdays: "Monday – Saturday: 9:30 AM – 8:30 PM",
@@ -89,95 +129,81 @@ export const BUSINESS_CONFIG = {
   whatsapp: {
     number: "919000000001",
     displayNumber: "+91 90000 00001",
-    defaultGreeting: "Hello Glow & Glam Studio team! I would like to enquire about your demo services.",
   },
   branches: [
     {
       id: "branch-1",
       name: "Branch 1 — Example Nagar",
-      city: "Kochi",
-      area: "Example Nagar",
       fullAddress: "123 Sample Main Road, Example Nagar, Kochi, Kerala 682001",
       phone: "+91 90000 00001",
-      phoneRaw: "+919000000001",
     },
-    {
-      id: "branch-2",
-      name: "Branch 2 — Sample Junction",
-      city: "Kochi",
-      area: "Sample Junction",
-      fullAddress: "456 Demo Street, Sample Junction, Kochi, Kerala 682002",
-      phone: "+91 90000 00002",
-      phoneRaw: "+919000000002",
-    },
+    // ...
   ],
 };
 ```
 
----
-
-## 5. Managing Services & Pricing
-
-All services, prices, durations, descriptions, benefits, and images are managed in **`src/data/services.js`**.
-
-Sample dummy services included:
-- **Haircut & Styling** — Starting at ₹299
-- **Hair Spa** — Starting at ₹699
-- **Hair Colouring** — Starting at ₹999
-- **Facial** — Starting at ₹599
-- **Manicure** — Starting at ₹249
-- **Pedicure** — Starting at ₹399
-- **Bridal Makeup** — Starting at ₹4,999
-- **Party Makeup** — Starting at ₹1,499
-- **Waxing** — Starting at ₹199
-
----
-
-## 6. Appointment Enquiry Architecture
-
-The appointment feature operates as an **Appointment Enquiry** system:
-1. **No Live Overbooking Risk:** The customer selects their preferred date, branch, and time slot.
-2. **Dual-Mode Submission:**
-   - **Mode 1 (Instant WhatsApp Dispatch):** Formats an elegant message with a unique enquiry reference (e.g., `DEMO-492104`), client name, branch, service, date, and notes, and opens WhatsApp directly with the configured dummy number `919000000001`.
-   - **Mode 2 (Web Form Endpoint):** If an endpoint is configured in `.env` (`VITE_FORM_ENDPOINT` e.g., Formspree or Web3Forms), the form dispatches a POST request and presents an on-screen confirmation summary.
-3. **Clear Customer Disclaimer:** An on-screen disclaimer explains: *"Submitting this form sends an appointment enquiry for demonstration purposes. Our front desk reception reviews stylist schedules and will contact you to confirm your scheduled slot."*
-
----
-
-## 7. Environment Variables (`.env`)
-
-Copy `.env.example` to `.env` or `.env.local` to customize environment variables:
-```bash
-# Optional Web3Forms / Formspree endpoint
-VITE_FORM_ENDPOINT=https://api.web3forms.com/submit
-
-# Optional Web3Forms Access Key
-VITE_WEB3FORMS_ACCESS_KEY=your_access_key_here
+### 2. Service Catalog & Pricing (`src/data/services.js`)
+Add, update, or remove rituals, starting prices, duration, benefits, and category classifications:
+```javascript
+{
+  id: "haircut-styling",
+  slug: "womens-haircut-styling",
+  name: "Haircut & Styling",
+  category: "hair-cut-styling",
+  categoryName: "Haircut & Styling",
+  startingPrice: "₹299",
+  duration: "45 mins",
+  isPopular: true,
+  // ...
+}
 ```
 
 ---
 
-## 8. Deployment Instructions
+## 🚀 Getting Started Locally
 
-### Deploy to Vercel (Recommended)
-1. Push the code to a Git repository (GitHub / GitLab / Bitbucket).
-2. Import the project into [Vercel](https://vercel.com/).
-3. Framework Preset: **Vite**.
-4. Build Command: `npm run build`.
-5. Output Directory: `dist`.
-6. Add environment variables if applicable (`VITE_FORM_ENDPOINT`).
-7. For client-side routing fallback on Vercel, ensure `vercel.json` rewrites to `/index.html`:
-   ```json
-   {
-     "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-   }
-   ```
+### Prerequisites
+- **Node.js**: v18.0.0 or higher
+- **npm**: v9.0.0 or higher
 
-### Deploy to Netlify
-1. Connect repository to [Netlify](https://netlify.com/).
-2. Build command: `npm run build`.
-3. Publish directory: `dist`.
-4. Ensure `public/_redirects` contains:
-   ```
-   /*    /index.html   200
-   ```
+### Installation & Run
+```bash
+# 1. Clone the repository
+git clone https://github.com/Naveendot55/GLOW-GLAM.git
+
+# 2. Navigate into the project folder
+cd GLOW-GLAM
+
+# 3. Install dependencies
+npm install
+
+# 4. Start local development server
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🚢 Deployment Instructions
+
+### 1. GitHub Pages (Automated Deployment)
+This repository includes an automated deployment script. To deploy changes directly to GitHub Pages:
+```bash
+npm run deploy
+```
+This builds the static bundle with base path `/GLOW-GLAM/`, adds the `404.html` SPA redirect fallback, and pushes the production assets to the `gh-pages` branch.
+
+### 2. Deploy to Vercel
+1. Import this repository into [Vercel](https://vercel.com/).
+2. Set Framework Preset to **Vite**.
+3. Deploy. The included `vercel.json` automatically configures single-page application routing rewrites.
+
+### 3. Deploy to Netlify
+1. Connect the repository to [Netlify](https://netlify.com/).
+2. Build command: `npm run build` | Publish directory: `dist`.
+3. The included `public/_redirects` file automatically handles SPA routing.
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
